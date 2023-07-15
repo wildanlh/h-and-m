@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CRUD & Export PDF | Wildan LH</title>
+    <title>H&M Store</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
@@ -14,7 +14,7 @@
             <div class="md:shadow-lg p-10 rounded mx-10">
                 <h2 class="text-5xl font-bold">Halo! &#128075;</h2>
                 <h1 class="text-6xl font-bold text-[#007AFF]">
-                    Selamat Datang di H and M
+                    Selamat Datang di H&M Store
                 </h1>
                 <div class="flex justify-start gap-5 mt-10">
                     @if (Route::has('login'))

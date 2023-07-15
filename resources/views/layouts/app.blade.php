@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CRUD & Export PDF | Wildan LH</title>
+    <title>H&M Store</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
@@ -15,7 +15,7 @@
         <div class="max-w-7xl container flex flex-wrap items-center justify-between mx-auto">
             <div>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <h1 class="text-2xl font-bold text-[#007AFF] ">H and M</h1>
+                    <h1 class="text-2xl font-bold text-[#007AFF] ">H&M Store</h1>
                 </a>
             </div>
             <div>
