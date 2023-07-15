@@ -125,7 +125,16 @@
                 </div>
 
                 <div class="relative">
-                    <input id="shirt_size" name="shirt_size" value="{{ $produk->shirt_size }}" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_size" name="shirt_size" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled>Choose shirt size</option>
+                        <option value="XS" {{ $produk->shirt_size === 'XS' ? 'selected' : '' }}>XS</option>
+                        <option value="S" {{ $produk->shirt_size === 'S' ? 'selected' : '' }}>S</option>
+                        <option value="M" {{ $produk->shirt_size === 'M' ? 'selected' : '' }}>M</option>
+                        <option value="L" {{ $produk->shirt_size === 'L' ? 'selected' : '' }}>L</option>
+                        <option value="XL" {{ $produk->shirt_size === 'XL' ? 'selected' : '' }}>XL</option>
+                        <option value="2XL" {{ $produk->shirt_size === '2XL' ? 'selected' : '' }}>2XL</option>
+                        <option value="3XL" {{ $produk->shirt_size === '3XL' ? 'selected' : '' }}>3XL</option>
+                    </select>
                     <label for="shirt_size" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Size
                     </label>
@@ -138,8 +147,30 @@
                     @enderror
                 </div>
 
+
                 <div class="relative">
-                    <input id="shirt_color" name="shirt_color" value="{{ $produk->shirt_color }}" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_color" name="shirt_color" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled>Choose shirt color</option>
+                        <option value="Aquamarine" {{ $produk->shirt_color === 'Aquamarine' ? 'selected' : '' }}>Aquamarine</option>
+                        <option value="Blue" {{ $produk->shirt_color === 'Blue' ? 'selected' : '' }}>Blue</option>
+                        <option value="Crimson" {{ $produk->shirt_color === 'Crimson' ? 'selected' : '' }}>Crimson</option>
+                        <option value="Fuscia" {{ $produk->shirt_color === 'Fuscia' ? 'selected' : '' }}>Fuscia</option>
+                        <option value="Goldenrod" {{ $produk->shirt_color === 'Goldenrod' ? 'selected' : '' }}>Goldenrod</option>
+                        <option value="Green" {{ $produk->shirt_color === 'Green' ? 'selected' : '' }}>Green</option>
+                        <option value="Indigo" {{ $produk->shirt_color === 'Indigo' ? 'selected' : '' }}>Indigo</option>
+                        <option value="Khaki" {{ $produk->shirt_color === 'Khaki' ? 'selected' : '' }}>Khaki</option>
+                        <option value="Maroon" {{ $produk->shirt_color === 'Maroon' ? 'selected' : '' }}>Maroon</option>
+                        <option value="Mauv" {{ $produk->shirt_color === 'Mauv' ? 'selected' : '' }}>Mauv</option>
+                        <option value="Orange" {{ $produk->shirt_color === 'Orange' ? 'selected' : '' }}>Orange</option>
+                        <option value="Pink" {{ $produk->shirt_color === 'Pink' ? 'selected' : '' }}>Pink</option>
+                        <option value="Puce" {{ $produk->shirt_color === 'Puce' ? 'selected' : '' }}>Puce</option>
+                        <option value="Purple" {{ $produk->shirt_color === 'Purple' ? 'selected' : '' }}>Purple</option>
+                        <option value="Red" {{ $produk->shirt_color === 'Red' ? 'selected' : '' }}>Red</option>
+                        <option value="Teal" {{ $produk->shirt_color === 'Teal' ? 'selected' : '' }}>Teal</option>
+                        <option value="Turqoise" {{ $produk->shirt_color === 'Turqoise' ? 'selected' : '' }}>Turqoise</option>
+                        <option value="Violet" {{ $produk->shirt_color === 'Violet' ? 'selected' : '' }}>Violet</option>
+                        <option value="Yellow" {{ $produk->shirt_color === 'Yellow' ? 'selected' : '' }}>Yellow</option>
+                    </select>
                     <label for="shirt_color" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Color
                     </label>
@@ -152,8 +183,19 @@
                     @enderror
                 </div>
 
+
                 <div class="relative">
-                    <input id="shirt_type" name="shirt_type" value="{{ $produk->shirt_type }}" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_type" name="shirt_type" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled>Choose shirt type</option>
+                        <option value="Blazer" {{ $produk->shirt_type === 'Blazer' ? 'selected' : '' }}>Blazer</option>
+                        <option value="Coat" {{ $produk->shirt_type === 'Coat' ? 'selected' : '' }}>Coat</option>
+                        <option value="Hoodie" {{ $produk->shirt_type === 'Hoodie' ? 'selected' : '' }}>Hoodie</option>
+                        <option value="Jacket" {{ $produk->shirt_type === 'Jacket' ? 'selected' : '' }}>Jacket</option>
+                        <option value="Shirt" {{ $produk->shirt_type === 'Shirt' ? 'selected' : '' }}>Shirt</option>
+                        <option value="Sweater" {{ $produk->shirt_type === 'Sweater' ? 'selected' : '' }}>Sweater</option>
+                        <option value="T-Shirt" {{ $produk->shirt_type === 'T-Shirt' ? 'selected' : '' }}>T-Shirt</option>
+                        <option value="Vest" {{ $produk->shirt_type === 'Vest' ? 'selected' : '' }}>Vest</option>
+                    </select>
                     <label for="shirt_type" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Type
                     </label>
@@ -166,8 +208,16 @@
                     @enderror
                 </div>
 
+
                 <div class="relative">
-                    <input id="shirt_pattern" name="shirt_pattern" value="{{ $produk->shirt_pattern }}" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_pattern" name="shirt_pattern" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled>Choose shirt pattern</option>
+                        <option value="None" {{ $produk->shirt_pattern === 'None' ? 'selected' : '' }}>None</option>
+                        <option value="Floral" {{ $produk->shirt_pattern === 'Floral' ? 'selected' : '' }}>Floral</option>
+                        <option value="Plaid" {{ $produk->shirt_pattern === 'Plaid' ? 'selected' : '' }}>Plaid</option>
+                        <option value="Polkadot" {{ $produk->shirt_pattern === 'Polkadot' ? 'selected' : '' }}>Polkadot</option>
+                        <option value="Striped" {{ $produk->shirt_pattern === 'Striped' ? 'selected' : '' }}>Striped</option>
+                    </select>
                     <label for="shirt_pattern" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Pattern
                     </label>
@@ -179,6 +229,7 @@
                     </div>
                     @enderror
                 </div>
+
 
                 <div class="relative">
                     <input id="price" name="price" type="number" value="{{ $produk->price }}" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
