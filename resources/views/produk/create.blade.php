@@ -125,7 +125,16 @@
                 </div>
 
                 <div class="relative">
-                    <input id="shirt_size" name="shirt_size" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_size" name="shirt_size" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled selected>Choose shirt size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="2XL">2XL</option>
+                        <option value="3XL">3XL</option>
+                    </select>
                     <label for="shirt_size" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Size
                     </label>
@@ -139,7 +148,28 @@
                 </div>
 
                 <div class="relative">
-                    <input id="shirt_color" name="shirt_color" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_color" name="shirt_color" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled selected>Choose shirt color</option>
+                        <option value="Aquamarine">Aquamarine</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Crimson">Crimson</option>
+                        <option value="Fuscia">Fuscia</option>
+                        <option value="Goldenrod">Goldenrod</option>
+                        <option value="Green">Green</option>
+                        <option value="Indigo">Indigo</option>
+                        <option value="Khaki">Khaki</option>
+                        <option value="Maroon">Maroon</option>
+                        <option value="Mauv">Mauv</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Puce">Puce</option>
+                        <option value="Purple">Purple</option>
+                        <option value="Red">Red</option>
+                        <option value="Teal">Teal</option>
+                        <option value="Turqoise">Turqoise</option>
+                        <option value="Violet">Violet</option>
+                        <option value="Yellow">Yellow</option>
+                    </select>
                     <label for="shirt_color" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Color
                     </label>
@@ -153,7 +183,17 @@
                 </div>
 
                 <div class="relative">
-                    <input id="shirt_type" name="shirt_type" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_type" name="shirt_type" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled selected>Choose shirt type</option>
+                        <option value="Blazer">Blazer</option>
+                        <option value="Coat">Coat</option>
+                        <option value="Hoodie">Hoodie</option>
+                        <option value="Jacket">Jacket</option>
+                        <option value="Shirt">Shirt</option>
+                        <option value="Sweater">Sweater</option>
+                        <option value="T-Shirt">T-Shirt</option>
+                        <option value="Vest">Vest</option>
+                    </select>
                     <label for="shirt_type" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Type
                     </label>
@@ -167,7 +207,14 @@
                 </div>
 
                 <div class="relative">
-                    <input id="shirt_pattern" name="shirt_pattern" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required />
+                    <select id="shirt_pattern" name="shirt_pattern" type="text" class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-[#007AFF]" required>
+                        <option value="" disabled selected>Choose shirt pattern</option>
+                        <option value="None">None</option>
+                        <option value="Floral">Floral</option>
+                        <option value="Plaid">Plaid</option>
+                        <option value="Polkadot">Polkadot</option>
+                        <option value="Striped">Striped</option>
+                    </select>
                     <label for="shirt_pattern" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
                         Shirt Pattern
                     </label>
