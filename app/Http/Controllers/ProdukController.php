@@ -21,7 +21,7 @@ class ProdukController extends Controller
         ];
 
         $pdf = PDF::loadView('produk.export-pdf', $data)
-            ->setPaper('a4', 'portrait');
+            ->setPaper('a2', 'landscape');
         return $pdf->stream();
     }
 

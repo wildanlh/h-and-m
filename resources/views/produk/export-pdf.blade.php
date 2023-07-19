@@ -15,21 +15,41 @@
         <thead>
             <tr>
                 <th>No</th>
-                <th>Nama Produk</th>
-                <th>Harga</th>
-                <th>Deskripsi</th>
-
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Shirt Size</th>
+                <th>Shirt Color</th>
+                <th>Shirt Type</th>
+                <th>Shirt Pattern</th>
+                <th>Price</th>
+                <th>Quantity</th>
             </tr>
         </thead>
         <tbody>
             @php $no = 1; @endphp
-            @forelse ($produk as $data)
+            @forelse ($produk as $produk)
             <tr>
                 <td>{{ $no++ }}</td>
-                <td>{{ $data->nama }}</td>
-                <td>{{ $data->harga }}</td>
-                <td>{{ $data->deskripsi}}</td>
-
+                <td>{{ $produk->first_name }}</td>
+                <td>{{ $produk->last_name }}</td>
+                <td>{{ $produk->age }}</td>
+                <td>{{ $produk->email }}</td>
+                <td>{{ $produk->phone }}</td>
+                <td>{{ $produk->address }}</td>
+                <td>{{ $produk->city }}</td>
+                <td>{{ $produk->country }}</td>
+                <td>{{ $produk->shirt_size }}</td>
+                <td>{{ $produk->shirt_color }}</td>
+                <td>{{ $produk->shirt_type }}</td>
+                <td>{{ $produk->shirt_pattern }}</td>
+                <td>{{ $produk->price }}</td>
+                <td>{{ $produk->quantity }}</td>
             </tr>
             @empty
             <tr>
