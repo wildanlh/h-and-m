@@ -27,7 +27,7 @@ class ProdukController extends Controller
 
     public function index()
     {
-        $produk = Produk::latest()->paginate(5);
+        $produk = Produk::latest()->paginate(5000);
         return view('produk.index', compact('produk'));
     }
 
