@@ -97,8 +97,8 @@
                             <form action="{{ route('produk.destroy', $data->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <a href="{{ route('produk.edit', $data->id) }}" class="text-yellow-500 font-medium py-2 px-4 relative border border-yellow-500 rounded bg-transparent transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-yellow-500 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">Edit</a> |
-                                <button type="submit" onsubmit="return confirm('Are You Sure ?');" class="text-red-500 font-medium py-2 px-4 relative border border-red-500 rounded bg-transparent transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-red-500 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">Delete</button>
+                                <a href="{{ route('produk.edit', $data->id) }}" class="relative hover:text-yellow-500 hover:duration-300 hover:ease-in-out before:absolute before:left-0 before:bottom-0 before:-z-10 before:h-0.5 before:w-full before:origin-top-left before:scale-x-0 before:bg-yellow-500 before:transition-transform before:duration-300 before:content-['']  before:hover:scale-x-100 mr-5">Edit</a> |
+                                <button type="submit" onsubmit="return confirm('Are You Sure ?');" class="relative hover:text-red-500 hover:duration-300 hover:ease-in-out before:absolute before:left-0 before:bottom-0 before:-z-10 before:h-0.5 before:w-full before:origin-top-left before:scale-x-0 before:bg-red-500 before:transition-transform before:duration-300 before:content-['']  before:hover:scale-x-100 mr-5">Delete</button>
                             </form>
                         </td>
                     </tr>
